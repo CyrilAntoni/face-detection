@@ -99,7 +99,7 @@ class App extends Component {
   //manage API call and response
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3001/imageurl', {
+    fetch('https://face-detection-api-ca.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -109,7 +109,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if (response) {
-        fetch('http://localhost:3001/image', {
+        fetch('https://face-detection-api-ca.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-type': 'application/json'},
           body: JSON.stringify({

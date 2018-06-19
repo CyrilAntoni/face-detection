@@ -20,7 +20,7 @@ class Signin extends React.Component {
   }
   
   onSubmitClick = () => {
-    fetch('http://localhost:3001/signin', {
+    fetch('https://face-detection-api-ca.herokuapp.com/signin', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

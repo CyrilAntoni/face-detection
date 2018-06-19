@@ -25,7 +25,7 @@ class Register extends React.Component {
   }
   
   onSubmitClick = () => {
-    fetch('http://localhost:3001/register', {
+    fetch('https://face-detection-api-ca.herokuapp.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
