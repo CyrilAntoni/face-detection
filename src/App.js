@@ -129,7 +129,7 @@ class App extends Component {
   }
   
   onRouteChange = route => {
-    if (route == 'signin') {
+    if (route === 'signin') {
       this.setState(initialState);
     }
     this.setState({route});
