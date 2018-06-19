@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to top right, #f2f6eb, #f6e2c2, #ffc4af, #ffa6c2, #e699f2) fixed;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px black;
+}
